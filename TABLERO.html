@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        window.alert("Ancho del tablero:");
+        let anchoTexto;
+        anchoTexto = prompt("Ancho del tablero:");
+        console.log(typeof (anchoTexto));
+        let x;
+        x = parseInt(anchoTexto);
+
+        for (z = 1; z <= x; z = z + 1) {
+            let resultado = "";
+            for (y = 1; y <= x; y = y + 1) {
+                if (z % 2 == 0) {
+                    if (y % 2 == 0) {
+                        resultado = resultado + "O"
+                    }
+                    else {
+                        resultado = resultado + "X";
+                    }
+                } else {
+                    if (y % 2 == 0) {
+                        resultado = resultado + "X"
+                    }
+                    else {
+                        resultado = resultado + "O";
+                    }
+                }
+            }
+            console.log(resultado)
+        }
+    </script>
+</body>
+
+</html>
